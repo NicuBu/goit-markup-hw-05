@@ -48,7 +48,7 @@
         <section class="intro">
             <div class="container">
             <h1 class="intro__title"> EFECTIVE SOLUTION FOR<br>YOUR BUSINESS</h1>
-            <button class="intro__servrequest" type="button">Request our service</button>
+            <button data-modal-open class="intro__servrequest" type="button">Request our service</button>
             </div>
         </section>
 
@@ -90,9 +90,18 @@
             
             <h2 class="whwedo__title">What we do</h2>
             <div class="whwedo__container">
+                <div class="thumb">
             <img class="whwedo__images" src="img/WwdB1.jpg" alt="frontend developer pic " width="200">
+            <h5 class="label">desktop apps</h5>
+                </div>
+                <div class="thumb">
             <img class="whwedo__images" src="img/WwdB2.jpg" alt="mobile app design pic" width="200">
+            <h5 class="label">mobile apps</h5>
+                </div>
+                <div class="thumb">
             <img class="whwedo__images" src="img/WwdB3.jpg" alt="site design pic" width="200">
+            <h5 class="label">design solutions</h5>
+                </div>
             </div>
         </div>
         <!-- Our team section-->
@@ -354,6 +363,20 @@
                 </ul>
         </div>
         </div>
-    </footer>    
+    </footer>
+
+    <div data-modal class="is-hidden">
+        <div data-modal-content>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi quas eaque, repudiandae rem nesciunt repellendus. Quis quaerat vero minima, voluptatum at exercitationem culpa magnam quae assumenda totam officia reiciendis.
+            </p>
+            <button data-modal-close type="button">x</button>
+
+
+        </div>
+
+    </div>
+
+    <script src="./modal.js"></script>
+
     </body>
 </html>
