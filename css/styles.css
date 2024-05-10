@@ -527,6 +527,11 @@ border-radius: 100px;
     margin-top: 75px;
 }
 
+.footer__findus__title {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .footer__findus__social {
     display: flex;
     justify-content: center;
@@ -541,6 +546,7 @@ border-radius: 100px;
 .footer__findus__social li:hover{
     background-color: var(--light-blue);
     fill: var(--white);
+    stroke: var(--white);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -634,18 +640,21 @@ box-shadow:
     gap: 30px;
 }
 .main__design{
-    padding: 20px 24px;
-    z-index: 3;
+    padding: 20px 24px;    
+    position: relative;
+    overflow: hidden;
+    background-color: var(--white);
 }
 .main__card {
     border-bottom: 1px solid rgba(238, 238, 238, 1) ;
     position: relative;
     overflow: hidden;
-    
 }
 
 .overlay{
     position: absolute;
+    top: 0;
+    left: 0;
     width: 370px;
     height: 294px;
     padding: 63px 24px 91px;
@@ -655,20 +664,24 @@ box-shadow:
     line-height: 28px;
     color: var(--white);
     background-color:rgba(33, 150, 243, 0.9) ;
-    transform: translatey(130%);
+    transform: translatey(105%);
     transition: transform 250ms ease-in-out;
-    z-index: 1;
+   
 
 }
 
-.main__card:hover .overlay {
+.main__card:hover {
     box-shadow: 
     1px 4px 6px 0px #00000029,
     0px 4px 4px 0px #0000000F,
     0px 1px 1px 0px #0000001F;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.main__card:hover .overlay{
     transform: translatey(0);
+
 }
 
 
